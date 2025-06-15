@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
-import DetailHeader from "../component/detailHeader";
+import DetailHeader from "../component/DetailHeader";
 import { useParams } from "react-router-dom";
 import { db } from "../../../config";
 import { CarImages, carListing } from "../../../config/schema";
@@ -9,7 +9,7 @@ import Service from "../../Shared/Service";
 import ImageGallery from "../component/ImageGallery";
 import Description from "../component/Description";
 import Features from "../component/Features";
-import Pricing from "../component/pricing";
+import Pricing from "../component/Pricing";
 import Spacification from "../component/Spacification";
 import OwnersDetails from "../component/OwnersDetails";
 import Footer from "../../components/Footer";

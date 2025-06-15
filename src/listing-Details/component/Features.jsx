@@ -1,9 +1,8 @@
-import React from "react";
 import { FaCheck } from "react-icons/fa6";
 
 function Features({ features }) {
   if (!features) {
-    return null; // or return <div>Loading features...</div>;
+    return null;
   }
 
   return (

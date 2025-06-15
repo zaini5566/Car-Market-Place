@@ -1,7 +1,4 @@
-import React from "react";
-import { useParams } from "react-router-dom";
 import { FaCalendarAlt } from "react-icons/fa";
-import { IoSpeedometerOutline } from "react-icons/io5";
 import { PiSpeedometerFill } from "react-icons/pi";
 import { TbManualGearbox } from "react-icons/tb";
 import { MdLocalGasStation } from "react-icons/md";
