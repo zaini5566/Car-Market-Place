@@ -1,0 +1,134 @@
+{
+  "features": [
+    {
+      "label": "Air Conditioning",
+      "name": "airConditioner",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Digital Meter",
+      "name": "digitalOdometer",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Heater",
+      "name": "heater",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Leather Seats",
+      "name": "leatherSeats",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Moonroof",
+      "name": "Moonroof",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Tachometer",
+      "name": "tachometer",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Touch Display",
+      "name": "touchDisplay",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Brake Assist",
+      "name": "brakeAssist",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "ABS Break",
+      "name": "Break",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Child Safety Locks",
+      "name": "childSafetyLocks",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Driver Air Bag",
+      "name": "driverAirBag",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Power Door Locks",
+      "name": "powerDoorLocks",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Traction Control",
+      "name": "tractionControl",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Fog Lights",
+      "name": "fogLights",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Rain Sensing Wiper",
+      "name": "rainSensingWiper",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Rear Spoiler",
+      "name": "rearSpoiler",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Electric Windows",
+      "name": "windowsElectric",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Apple CarPlay",
+      "name": "appleCarPlay",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Bluetooth",
+      "name": "bluetooth",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Power Steering",
+      "name": "powerSteering",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Power Mirror",
+      "name": "powermirror",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Power Windows",
+      "name": "powerwindows",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": " Air Bags",
+      "name": "AirBags",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "USB and Auxillary Cable",
+      "name": "USBPork",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Wireless Charging",
+      "name": "Wirelessharging",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Vanity Mirror",
+      "name": "vanityMirror",
+      "fieldType": "checkbox"
+    }
+  ]
+}
