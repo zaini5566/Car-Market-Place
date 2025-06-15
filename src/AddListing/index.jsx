@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import carDetails from "../Shared/carDetails.json";
 import InputFields from "./components/inputFields";
 import DropDownField from "./components/dropDownField";
-import TextAreaField from "./components/TextAreaField";
+import TextAreaField from "./components/textAreaField";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { Separator } from "../components/ui/separator";
 import { Checkbox } from "../components/ui/checkbox";
