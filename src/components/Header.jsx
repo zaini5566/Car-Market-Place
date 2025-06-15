@@ -28,13 +28,17 @@ const Header = () => {
         <div className=" flex gap-3">
           <UserButton />
           <Link to={"/profile"}>
-            <Button className={"text-white bg-teal-600"}>Add Listing</Button>
+            <Button className={"!text-white bg-teal-600 cursor-pointer"}>
+              Add Listing
+            </Button>
           </Link>
         </div>
       ) : (
-        <SignInButton className="bg-teal-600 text-teal-600">
-          Add Listing
-        </SignInButton>
+        <Button
+          className={"!text-white bg-teal-600 hover:bg-teal-700 cursor-pointer"}
+        >
+          <SignInButton className="cursor-pointer">Sell Car</SignInButton>
+        </Button>
       )}
     </div>
   );
