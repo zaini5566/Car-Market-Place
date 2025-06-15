@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import carDetails from "../Shared/carDetails.json";
-import InputFields from "./components/InputFields";
+import InputFields from "./components/inputFields";
 import DropDownField from "./components/DropDownField";
 import TextAreaField from "./components/TextAreaField";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
