@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import MyListing from "./components/MyListing.jsx";
+import MyListing from "./components/MyListing";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Inbox from "./components/Inbox";
 const Profile = () => {
