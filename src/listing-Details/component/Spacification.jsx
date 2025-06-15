@@ -1,6 +1,6 @@
 import React from "react";
 import CarSpecification from "../../Shared/CarSpecification";
-import IconField from "../../AddListing/components/iconField";
+import IconField from "../../AddListing/components/IconField";
 
 function Spacification({ carDetails = {} }) {
   const specifications = CarSpecification || [];

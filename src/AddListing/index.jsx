@@ -11,13 +11,13 @@ import features from "../Shared/features.json";
 import { Button } from "../components/ui/button";
 import { db } from "../../config";
 import { CarImages, carListing } from "../../config/schema";
-import UploardImage from "./components/uploardImage";
+import UploardImage from "./components/UploardImage";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useUser } from "@clerk/clerk-react";
 import moment from "moment/moment";
 import { eq } from "drizzle-orm";
 import Service from "../Shared/Service";
-import IconField from "./components/iconField";
+import IconField from "./components/IconField";
 const AddListing = () => {
   const [formdata, setformdata] = useState([]);
   const [featuresdata, setfeaturesdata] = useState([]);
