@@ -6,7 +6,7 @@ import { RouterProvider } from "react-router-dom";
 import Home from "./Home.jsx";
 import Contact from "./Contact.jsx";
 import { ClerkProvider } from "@clerk/clerk-react";
-
+import Profile from "./Profile";
 import AddListing from "./AddListing/index.jsx";
 import SearchByCategory from "./search/[category]/index.jsx";
 import SearchByOptions from "./search/index.jsx";
