@@ -52,7 +52,7 @@ const Inbox = () => {
                   console.log("Selected:", channel?.url);
                 }}
                 channelListQueryParams={{
-                  includeEmpty: true,
+                  order: "latest",
                 }}
               />
             </div>
