@@ -1,20 +1,38 @@
 import React, { useEffect, useState } from "react";
-import { App as SendbirdApp, SendBirdProvider } from "@sendbird/uikit-react";
-import "@sendbird/uikit-react/dist/index.css";
-import { useUser } from "@clerk/clerk-react";
+import { useSearchParams, useNavigate } from "react-router-dom";
+import { SendBirdProvider } from "@sendbird/uikit-react";
 import { GroupChannelList } from "@sendbird/uikit-react/GroupChannelList";
 import { GroupChannel } from "@sendbird/uikit-react/GroupChannel";
+import "@sendbird/uikit-react/dist/index.css";
+import { useUser } from "@clerk/clerk-react";
+
 const Inbox = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const tabParam = searchParams.get("tab") || "my-listing";
+  const channelUrl = searchParams.get("channel_url");
+  const [tab, setTab] = useState(tabParam);
   const [userID, setUserID] = useState();
   const { user } = useUser();
-  const [channelUrl, setchannelUrl] = useState();
 
   useEffect(() => {
     if (user) {
-      const id = (user.primaryEmailAddress?.emailAddress).split("@")[0];
+      const id = user.primaryEmailAddress?.emailAddress.split("@")[0];
       setUserID(id);
     }
   }, [user]);
+
+  // Sync tab state with URL param
+  useEffect(() => {
+    setTab(tabParam);
+  }, [tabParam]);
+
+  // When user clicks a tab, update the URL
+  const handleTabChange = (value) => {
+    setTab(value);
+    searchParams.set("tab", value);
+    setSearchParams(searchParams);
+  };
 
   return (
     <div>
@@ -30,7 +48,8 @@ const Inbox = () => {
             <div>
               <GroupChannelList
                 onChannelSelect={(channel) => {
-                  setchannelUrl(channel?.url);
+                  // Optionally update channel URL in search params or internal state
+                  console.log("Selected:", channel?.url);
                 }}
                 channelListQueryParams={{
                   includeEmpty: true,

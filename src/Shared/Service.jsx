@@ -82,14 +82,18 @@ const CreateSendBirdUser = (userId, nickName, profileUrl) => {
 };
 
 const CreateSendBirdChannel = (users, title) => {
+  const payload = {
+    user_ids: users,
+    is_distinct: true,
+    name: title || "Chat",
+    operator_ids: [users[0]],
+  };
+
+  console.log("Creating channel with payload:", payload);
+
   return axios.post(
-    "https://api-" + SendBirdApplicationId + ".sendbird.com/v3/group_channels",
-    {
-      user_ids: users,
-      is_distinct: true,
-      name: title,
-      operator_ids: [users[0]],
-    },
+    `https://api-${SendBirdApplicationId}.sendbird.com/v3/group_channels`,
+    payload,
     {
       headers: {
         "Content-Type": "application/json",

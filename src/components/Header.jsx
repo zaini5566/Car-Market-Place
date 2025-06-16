@@ -27,7 +27,7 @@ const Header = () => {
       {isSignedIn ? (
         <div className=" flex gap-3">
           <UserButton />
-          <Link to={"/profile"}>
+          <Link to={"/profile?tab=my-listing"}>
             <Button className={"!text-white bg-teal-600 cursor-pointer"}>
               Add Listing
             </Button>
