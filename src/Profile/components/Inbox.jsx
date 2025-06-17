@@ -50,6 +50,11 @@ const Inbox = () => {
                 onChannelSelect={(channel) => {
                   // Optionally update channel URL in search params or internal state
                   console.log("Selected:", channel?.url);
+                  if (channel?.url) {
+                    searchParams.set("channel_url", channel.url);
+                    setSearchParams(searchParams);
+                    navigate(`?tab=${tab}&channel_url=${channel.url}`);
+                  }
                 }}
                 channelListQueryParams={{
                   order: "latest",
