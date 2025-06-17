@@ -1,15 +1,27 @@
 const carMakes = [
   {
     id: 1,
-    name: "Audi",
+    name: "Toyota",
   },
   {
     id: 2,
-    name: "BMW",
+    name: "Suzuki",
   },
   {
     id: 3,
-    name: "Ford",
+    name: "Hyundai",
+  },
+  {
+    id: 4,
+    name: "Honda",
+  },
+  {
+    id: 5,
+    name: "Mercedes-Benz",
+  },
+  {
+    id: 6,
+    name: "Audi",
   },
 ];
 
